@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+.navigation {
+    color: white;
+    margin: 30px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.navigation button {
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #fc6a2c;
+    color: white;
+    width: 177px;
+    transition: ease 0.3s;
+}
+
+.navigation button:hover {
+    background: none;
+    border: 3px solid #fc6a2c;
+}
+
+.navigation input {
+    background: none;
+    border: none;
+    border: 3px solid #fc6a2c;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.navigation input::placeholder {
+    color: white;
+}
+
+.range {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 323px;
+    background-color: #fc6a2c;
+    max-height: 660px;
+    gap: 10px;
+    padding-bottom: 30px;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 20px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.card img {
+    width: 323px;
+    height: 226px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 93px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card-container p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.range {
+    color: white;
+    gap: 5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 10px;
+    }
+}
